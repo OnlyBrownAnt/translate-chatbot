@@ -55,7 +55,8 @@ def preprocess_sentence(w):
 
 # 去除重音符号
 # 清理句子
-# 返回这样格式的单词对：[目标序列, 输入序列]
+# 返回这样格式的单词对：[目标序列, 输入序列]，例如法语翻译为英语案例中[英语，法语]
+# 单词对的格式和数据集的内容排序有关。比如数据集的一行顺序是 "英文" "法语" 那么单词对格式是[目标序列, 输入序列]，反之则是[输入序列, 目标序列]
 def create_dataset(path, num_examples):
     lines = io.open(path, encoding='UTF-8').read().strip().split('\n')
 

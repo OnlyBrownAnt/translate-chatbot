@@ -10,10 +10,10 @@ def translate(sentence):
 
 if __name__ == "__main__":
     # 第一次下载数据集
-    downloadData()
+    # downloadData()
 
     # 训练模型
     # train()
 
     # 预测
-    # translate(u'esta es mi vida.')
+    translate(u'Firme esto Apuntad más alto. ')
